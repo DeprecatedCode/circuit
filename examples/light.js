@@ -7,7 +7,7 @@
 var circuit = require('../index'); // replace with require('circuit')
 
 /**
- * Set up a circuit method on any object
+ * Set up a circuit method on an object
  */
 var lightSwitch = {
     state: 'off',
