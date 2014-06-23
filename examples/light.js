@@ -31,7 +31,7 @@ var lamp = {
 var wire = lightSwitch.toggle;
 wire(lamp.respond);
 wire(function printInformation (done, scope) {
-    console.log('The lamp light is ' + (scope.lamp.on ? 'on' : 'off'));
+    console.log(scope.x + ': The lamp light is ' + (scope.lamp.on ? 'on' : 'off'));
     done();
 });
 
