@@ -53,7 +53,7 @@ var cap = circuit(function (done, scope) {
  * Make the pyramid shorter
  */
 var down = circuit(function (done, scope) {
-    done({fill: scope.fill.slice(0, -2)});
+    done({fill: scope.fill.slice(0, -1 * scope.brick.length)});
 })(render);
 
 /**
@@ -82,4 +82,4 @@ console.log();
 /**
  * Let's create another pyramid
  */
-pyramid({brick: '<}', defaultTop: '@', cap: '<}@[==]'});
+pyramid({brick: '<})}', defaultTop: '=@', cap: '<}@[==]'});
